@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <item name="bindEditTextTag" type="id">bindEditTextTag</item>
+    <item name="bindRecycleView" type="id">bindRecycleView</item>
+    <item type="id" name="webprogress">webprogress</item>
+</resources>

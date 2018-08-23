@@ -1,0 +1,276 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:wheel="http://schemas.android.com/tools">
+
+    <data>
+
+        <variable
+            name="headerBarViewModel"
+            type="com.bber.company.android.viewmodel.HeaderBarViewModel" />
+
+        <variable
+            name="videoViewModel"
+            type="com.bber.company.android.viewmodel.VideoViewModel" />
+
+        <variable
+            name="index"
+            type="Integer" />
+        <import type="android.view.View" />
+    </data>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:background="@color/white"
+            android:fitsSystemWindows="true"
+            android:orientation="vertical">
+            <!-- 头部 -->
+            <include
+                layout="@layout/include_header"
+                app:headerBarViewModel="@{headerBarViewModel}" />
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="44dp"
+                android:background="@drawable/icon_titile_bg">
+                <LinearLayout
+                    android:id="@+id/type_Lin"
+                    android:layout_width="290dp"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:layout_centerVertical="true"
+                    android:layout_centerHorizontal="true"
+                    android:background="@drawable/title_stoke"
+                    android:visibility="visible"
+                    >
+                    <LinearLayout
+                        android:id="@+id/video_new"
+                        android:layout_width="0dp"
+                        android:layout_height="28dp"
+                        android:layout_weight="1"
+                        android:background="@drawable/icon_choose_left"
+                        android:gravity="center">
+                        <TextView
+                            android:id="@+id/video_new_text"
+                            android:layout_width="wrap_content"
+                            android:layout_height="28dp"
+                            android:gravity="center"
+                            android:text="最新"
+                            android:textSize="12sp"
+                            android:textColor="@color/chat_color"/>
+                        <ImageView
+                            android:id="@+id/video_new_image"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="3dp"
+                            android:background="@drawable/icon_menu_choose"/>
+                    </LinearLayout>
+
+                    <View
+                        android:layout_width="0.2dp"
+                        android:layout_height="match_parent"
+                        android:background="@color/chat_color"
+                        android:layout_marginTop="5dp"
+                        android:layout_marginBottom="5dp"/>
+                    <LinearLayout
+                        android:id="@+id/video_type"
+                        android:layout_width="0dp"
+                        android:layout_height="28dp"
+                        android:layout_weight="1"
+                        android:gravity="center">
+                        <TextView
+                            android:id="@+id/video_type_text"
+                            android:layout_width="wrap_content"
+                            android:layout_height="28dp"
+                            android:gravity="center"
+                            android:text="视频"
+                            android:textSize="12sp"
+                            android:textColor="@color/chat_color"/>
+                        <ImageView
+                            android:id="@+id/video_type_image"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="3dp"
+                            android:background="@drawable/icon_ecpand"/>
+                    </LinearLayout>
+                    <View
+                        android:layout_width="0.2dp"
+                        android:layout_height="match_parent"
+                        android:background="@color/chat_color"
+                        android:layout_marginTop="5dp"
+                        android:layout_marginBottom="5dp"/>
+                    <TextView
+                        android:id="@+id/text_voice"
+                        android:layout_width="0dp"
+                        android:layout_height="28dp"
+                        android:layout_weight="1"
+                        android:gravity="center"
+                        android:text="声优"
+                        android:textSize="12sp"
+                        android:textColor="@color/chat_color"/>
+                    <View
+                        android:layout_width="0.2dp"
+                        android:layout_height="match_parent"
+                        android:background="@color/chat_color"
+                        android:layout_marginTop="5dp"
+                        android:layout_marginBottom="5dp"/>
+
+                    <View
+                        android:id="@+id/view_hot"
+                        android:layout_width="0.2dp"
+                        android:layout_height="match_parent"
+                        android:background="@color/chat_color"
+                        android:layout_marginTop="5dp"
+                        android:layout_marginBottom="5dp"/>
+
+                    <TextView
+                        android:id="@+id/text_vr"
+                        android:layout_width="0dp"
+                        android:layout_height="28dp"
+                        android:layout_weight="1"
+                        android:gravity="center"
+                        android:text="VR"
+                        android:textSize="12sp"
+                        android:textColor="@color/chat_color"/>
+                </LinearLayout>
+
+                <!--搜索的长条-->
+                <LinearLayout
+                    android:id="@+id/search_Lin"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:gravity="center"
+                    android:paddingLeft="20dp"
+                    android:visibility="gone">
+                    <ImageView
+                        android:id="@+id/image_change"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:background="@mipmap/back"/>
+
+                    <!--gray  white-->
+                    <EditText
+                        android:id="@+id/keyword_text"
+                        android:layout_width="250dp"
+                        android:layout_height="40dp"
+                        android:hint="请输入关键字搜索"
+                        android:gravity="center_vertical"
+                        android:layout_marginLeft="20dp"
+                        android:textColor="@color/gray"
+                        android:textColorHint="@color/white"
+                        android:textSize="14sp"
+                        android:singleLine="true" />
+
+                    <ImageView
+                        android:id="@+id/icon_search"
+                        android:layout_width="20dp"
+                        android:layout_height="20dp"
+                        android:src="@drawable/icon_search"
+                        android:layout_marginLeft="10dp" />
+                </LinearLayout>
+
+                <ImageView
+                    android:id="@+id/icon_change"
+                    android:layout_width="20dp"
+                    android:layout_height="20dp"
+                    android:src="@drawable/icon_search"
+                    android:layout_centerVertical="true"
+                    android:layout_toRightOf="@+id/type_Lin"
+                    android:layout_marginLeft="8dp" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+                <!--最新最热的列表-->
+                <android.support.v4.view.ViewPager
+                    android:id="@+id/chat_viewpager"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                </android.support.v4.view.ViewPager>
+
+
+            </RelativeLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/progress_lin"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:clickable="false"
+            android:layout_centerInParent="true"
+            android:visibility="@{videoViewModel.isShow?View.VISIBLE :View.GONE}">
+            <LinearLayout
+
+                android:layout_width="120dp"
+                android:layout_height="120dp"
+                android:gravity="center"
+                android:orientation="vertical"
+                >
+                <ProgressBar
+                android:id="@+id/progress"
+                style="@style/progressBar_style"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:layout_gravity="center" />
+                <!--<TextView-->
+                    <!--android:id="@+id/tips_loading_msg"-->
+                    <!--android:layout_width="wrap_content"-->
+                    <!--android:layout_height="wrap_content"-->
+                    <!--android:text="加载中..."-->
+                    <!--android:layout_marginTop="10dp"-->
+                    <!--style="@style/text_pink14"-->
+                    <!--android:visibility="visible"-->
+                    <!--android:gravity="center"/>-->
+            </LinearLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/hiding_linear"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@color/black60"
+            android:gravity="center"
+            android:orientation="vertical"
+            android:visibility="@{videoViewModel.isVip==true? View.VISIBLE :View.GONE}"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true">
+
+            <Button
+                android:id="@+id/free_button"
+                android:layout_width="226dp"
+                android:layout_height="54dp"
+                android:text='@{videoViewModel.videoStatus==2?"申请免费试用":(videoViewModel.videoStatus==4?"免费获取黄金会员":"")}'
+                android:textSize="16sp"
+                android:gravity="center"
+                android:textColor="@color/white"
+                android:padding="10dp"
+                android:enabled="@{videoViewModel.videoStatus==3?false:true}"
+                android:background="@{videoViewModel.videoStatus==2?@drawable/btn_pink_corners:(videoViewModel.videoStatus==4?@drawable/btn_pink_corners:@drawable/icon_timeover)}"/>
+
+
+            <Button
+                android:id="@+id/buy_vipbutton"
+                android:layout_width="226dp"
+                android:layout_height="54dp"
+                android:text="充值黄金会员"
+                android:gravity="center"
+                android:textSize="16sp"
+                android:layout_marginTop="20dp"
+                android:textColor="@color/white"
+                android:padding="10dp"
+                android:background="@drawable/btn_pink_corners"/>
+        </LinearLayout>
+
+    </RelativeLayout>
+
+</layout>

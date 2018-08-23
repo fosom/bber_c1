@@ -1,0 +1,227 @@
+<?xml version="1.0" encoding="utf-8"?><!-- Copyright (C) 2007 The Android Open Source Project
+
+     Licensed under the Apache License, Version 2.0 (the "License");
+     you may not use this file except in compliance with the License.
+     You may obtain a copy of the License at
+
+          http://www.apache.org/licenses/LICENSE-2.0
+
+     Unless required by applicable law or agreed to in writing, software
+     distributed under the License is distributed on an "AS IS" BASIS,
+     WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+     See the License for the specific language governing permissions and
+     limitations under the License.
+-->
+
+<resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
+    <!-- General strings -->
+
+    <!-- label for the icon meaning 'show me all the images' -->
+
+    <!-- label for the icon meaning 'show me all the videos' -->
+
+    <!-- label for the icon meaning 'show me all the images that were taken with the camera' -->
+
+    <!-- label for the 'pictures application shown in the top level 'all applications' -->
+
+    <!-- label for the gallery application (displayed when the user needs to
+         choose an application to pick a picture or a video) -->
+
+    <!-- label for the folder that contains Camera pictures in the gallery -->
+
+    <!-- label for the folder that contains Camera videos in the gallery -->
+
+    <!-- label for the folder that contains Camera videos in the gallery -->
+
+    <!-- menu pick: crop the currently selected image -->
+
+    <!-- menu pick: view the currently selected image -->
+
+    <!-- menu pick: go to the preferences screen for the camera or image gallery -->
+
+    <!-- alert to the user to wait for some operation to complete -->
+
+    <!-- alert to the user to that an SD card must be installed before using the camera -->
+
+    <!-- alert to the user to that the SD card is too full to complete the operation -->
+
+    <!-- alert to the user to that the SD card is being disk-checked -->
+
+    <!-- Toast/alert after saving wallpaper -->
+    <string name="wallpaper">Mengganti wallpaper\u2026</string>
+
+    <!-- Settings stuff -->
+
+    <!-- Toast/alert that the image is being saved to the SD card -->
+    <string name="savingImage">Menyimpan gambar\u2026</string>
+
+    <!-- Toast/alert that the face detection is being run -->
+    <string name="runningFaceDetection">Silakan tunggu\u2026</string>
+
+
+    <!-- Menu items: -->
+    <!-- menu pick to view the currently selected image -->
+
+    <!-- menu pick to view the details of the currently selected image -->
+
+    <!-- menu pick to show the location of the currently selected image on maps-->
+
+    <!-- menu pick to rotate the currently selected image (brings up submenu) -->
+
+    <!-- menu pick to rotate the currently selected image to the left -->
+
+    <!-- menu pick to rotate the currently selected image to the right -->
+
+    <!-- menu pick to start a slide show -->
+
+    <!-- menu pick to enter multiselect mode -->
+
+    <!-- menu pick to go to camera mode to capture a picture -->
+    <!-- menu pick to go to video mode to capture a video -->
+
+    <!-- button indicating that the cropped image should be saved -->
+    <!-- button indicating that the cropped image should be reverted back to the original -->
+
+    <!-- Confirmation dialog title after deleting a picture -->
+    <!-- Confirmation dialog message after deleting a picture -->
+    <!-- Confirmation dialog message after deleting a video -->
+
+    <!-- Confirmation dialog message after deleting a multiple media files -->
+
+    <!-- button indicating that the picture just taken should be deleted -->
+
+    <!-- button indicating that the picture just taken should be shared by email, mms, etc -->
+
+    <!-- button indicating that the picture just taken should be set as a contact photo, wallpaper, etc -->
+
+    <!-- button indicating that the video just taken should be played -->
+
+    <!-- button indicating that the video just taken should be accepted as an attachment -->
+
+    <!-- button indicating that the video recording session should be canceled -->
+
+    <!-- button indicating that the picture just taken should be cropped -->
+
+    <!-- Toast after trying to share a picture indicating that there are no applications which are capable of so doing. -->
+
+    <!-- Toast after trying to share a video indicating that there are no applications which are capable of so doing. -->
+
+    <!-- Toast after trying to share multiple media files indicating that there are no applications which are capable of so doing. -->
+
+    <!-- Menu item for playing the video. -->
+
+    <!-- String indicating an action of picking a picture to use as wallpaper (e.g. set wallpaper from "Pictures") -->
+
+    <!-- Settings screen, section heading  -->
+
+    <!-- Settings screen, section heading  -->
+
+    <!-- Settings screen, setting summary text -->
+
+    <!-- Settings screen, title for preference for image size to be used in the im -->
+    <!-- Title of dialog that appears after selecting Picture size setting option -->
+    <!-- Options in dialog that appears after selecting Picture size setting option -->
+    <!-- Settings screen, setting option name -->
+    <!-- Settings screen, setting summary text -->
+    <!-- Title of dialog that appears after selecting Picture sort setting option -->
+    <!-- Options in dialog that appears after selecting Picture sort setting option -->
+    <!-- Settings screen, setting summary text -->
+    <!-- Title of dialog that appears after selecting Slideshow interval setting option -->
+    <!-- Options in dialog that appears after selecting Slideshow interval setting option -->
+    <!-- Settings screen, setting option name -->
+    <!-- Settings screen, setting summary text -->
+    <!-- Title of dialog that appears after selecting Slideshow transition setting option -->
+    <!-- Options in dialog that appears after selecting Slideshow transition
+     setting option -->
+    <!-- Settings screen, setting check box name -->
+
+    <!-- Settings screen, setting summary text -->
+
+    <!-- Settings screen, setting check box name -->
+
+    <!-- Settings screen, setting summary text -->
+
+    <!-- Menu item to go to the settings screen -->
+
+    <!-- Text message indicating that there are no pictures or videos in a particular
+         bucket on the SD card -->
+
+    <!-- Preference title for whether the user should be prompted form confirmation when deleting images  -->
+
+    <!-- Preference summary for whether the user should be prompted form confirmation when deleting images  -->
+
+    <!-- Message to show when there's no lat/lng information in the image -->
+    <!-- Title of Details dialog  -->
+    <!-- Label in message of Details dialog  -->
+    <!-- Label in message of Details dialog  -->
+    <!-- Label in message of Details dialog  -->
+    <!-- Label in message of Details dialog  -->
+    <!-- Label in message of Details dialog  -->
+    <!-- Label in message of Details dialog  -->
+    <!-- Label in message of Details dialog  -->
+    <!-- Label in message of Details dialog  -->
+    <!-- Label in message of Details dialog  -->
+    <!-- Label in message of Details dialog  -->
+    <!-- Label in message of Details dialog  -->
+    <!-- Label in message of Details dialog  -->
+    <!-- Label in message of Details dialog  -->
+    <!-- Label in message of Details dialog  -->
+
+    <!-- Used to format image dimensions in Details dialog. e.g. 64 x 64 -->
+    <!-- Used to format short video duration in Details dialog. minutes:seconds e.g. 00:30 -->
+    <!-- Used to format video duration in Details dialog. hours:minutes:seconds e.g. 0:21:30 -->
+    <!-- Unit of measure in the Details dialog frames per second. e.g. 20 fps -->
+    <!-- Unit of measure in the Details dialog K bits per second. e.g. 192 Kbps -->
+    <!-- Unit of measure in the Details dialog M bits per second. e.g. 2.3 Mbps -->
+    <!-- Details dialog "OK" button. Dismisses dialog. -->
+
+    <!-- Text of context menu when an image is selected -->
+    <!-- Text of context menu when a video is selected -->
+    <!-- Hint that appears when cropping an image with more than one face -->
+    <string name="multiface_crop_help">Sentuh wajah untuk memulai.</string>
+
+    <!-- Activity title when in the image gallery to see pictures -->
+
+    <!-- Activity title when in the image gallery to select a picture -->
+
+    <!-- Activity title when in the image gallery to see videos -->
+
+    <!-- Activity title when in the image gallery to select a video -->
+
+    <!-- Displayed in the title of the dialog for things to do with a picture that
+         is to be sent to another application: -->
+
+    <!-- Displayed in the title of the dialog for things to do with a picture that
+         is to be "set as" (e.g. set as contact photo or set as wallpaper) -->
+
+    <!-- Displayed in the title of the dialog for things to do with a video that
+         is to be sent to another application. -->
+
+    <!-- Displayed in the title of the dialog for things to do with media files that
+         are to be sent to another application: -->
+
+    <!-- Activity label. This might show up in the activity-picker -->
+    <!-- shown in the video player view while the video is being loaded, before it starts playing -->
+
+    <!-- Movie View Resume Playing dialog title -->
+
+    <!-- Movie View Start Playing dialog title -->
+
+    <!-- Movie View Start Playing button "Resume from bookmark" -->
+
+    <!-- Movie View Start Playing button "Beginning" -->
+
+    <!-- Title for picture frame gadget to show in list of all available gadgets -->
+
+    <!-- Title for the file information dialog -->
+
+    <!-- The video is execeed the size limit of a MMS, and suggest user to record a shorter length clip -->
+
+    <!-- The title shown on the button which share the selected images by gmail, mms, and etc. -->
+
+    <!-- The title shown on the button which will delete all the selected images -->
+
+    <!-- Title shown on the button which will close the multiselction mode -->
+
+    <!-- The messsage shown on progress dialog when deleting images -->
+</resources>

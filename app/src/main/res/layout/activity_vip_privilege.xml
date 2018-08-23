@@ -1,0 +1,87 @@
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:fresco="http://schemas.android.com/apk/res-auto"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <data>
+
+        <variable
+            name="viewModel"
+            type="com.bber.company.android.viewmodel.WalletViewModel" />
+
+        <variable
+            name="headerBarViewModel"
+            type="com.bber.company.android.viewmodel.HeaderBarViewModel" />
+    </data>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <!-- 头部 -->
+        <include
+            android:id="@+id/header_bar"
+            layout="@layout/include_header"
+            app:headerBarViewModel="@{headerBarViewModel}" />
+
+        <LinearLayout
+            android:id="@+id/ll_list_type"
+            android:layout_marginTop="@dimen/top_margin12"
+            android:clickable="false"
+            style="@style/btn_item_style_setting"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/header_bar"
+            android:orientation="vertical">
+
+            <TextView
+                android:text="@string/vip_tip"
+                android:paddingBottom="@dimen/top_margin6"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+            <include layout="@layout/view_line" />
+
+            <LinearLayout
+                android:paddingTop="@dimen/top_margin6"
+                android:id="@+id/ll_vip_item"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/toolbar"
+                android:orientation="horizontal">
+
+                <android.support.v7.widget.RecyclerView
+                    android:background="@color/item_bg"
+                    android:id="@+id/recyclerView_item"
+                    android:scrollbars="none"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content" />
+            </LinearLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_above="@+id/btn_sure"
+            android:id="@+id/ll_list"
+            android:clickable="false"
+            android:layout_marginTop="@dimen/top_margin6"
+            android:orientation="vertical"
+            android:layout_below="@+id/ll_list_type"
+            style="@style/item_style_boundary_wihte"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:layout_marginBottom="@dimen/top_margin6"
+                android:text="@string/vip_service_item"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+            <include layout="@layout/view_line" />
+
+            <android.support.v7.widget.RecyclerView
+                android:background="@color/item_bg"
+                android:layout_below="@+id/ll_list_type"
+                android:id="@+id/recyclerView"
+                android:scrollbars="none"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+        </LinearLayout>
+
+    </RelativeLayout>
+</layout>

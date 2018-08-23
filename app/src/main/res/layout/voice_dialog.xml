@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:gravity="center"
+    android:alpha="0.8"
+    android:background="@drawable/round_background"
+    android:padding="@dimen/activity_horizontal_margin"
+    android:orientation="vertical">
+
+    <ImageView
+        android:id="@+id/mic_img"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:contentDescription="@string/abot_us_maintext"
+        android:src="@mipmap/mic_1" />
+
+    <TextView
+        android:id="@+id/cancle_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/top_margin12"
+        android:contentDescription="@string/abot_us_maintext"
+        android:text="上滑取消录音"
+        android:textAllCaps="true"
+        android:textColor="@color/item_bg"
+        android:textSize="14sp" />
+
+</LinearLayout>

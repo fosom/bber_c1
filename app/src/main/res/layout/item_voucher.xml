@@ -1,0 +1,73 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/item_voucher_bg"
+    android:layout_marginRight="@dimen/top_margin12"
+    android:layout_marginTop="@dimen/top_margin6"
+    android:layout_marginLeft="@dimen/top_margin12"
+    android:clickable="true"
+    android:orientation="horizontal"
+    android:gravity="center_vertical">
+
+    <LinearLayout
+        android:layout_weight="3"
+        android:id="@+id/ll_money"
+        android:paddingBottom="@dimen/top_margin20"
+        android:paddingTop="@dimen/top_margin20"
+        android:layout_width="0dp"
+        android:gravity="center|bottom"
+        android:layout_height="wrap_content">
+        <TextView
+            style="@style/text_white20"
+            android:text="¥"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+        <TextView
+            android:id="@+id/tv_vouvherMoney"
+            style="@style/text_white40"
+            android:textStyle="bold"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+    </LinearLayout>
+
+    <View
+        android:layout_toRightOf="@+id/ll_money"
+        android:layout_width="2dp"
+        android:background="@drawable/dash_line"
+        android:layout_height="match_parent"/>
+
+    <LinearLayout
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true"
+        android:layout_height="wrap_content"
+        android:layout_width="0dp"
+        android:layout_weight="6"
+        android:layout_marginLeft="@dimen/top_margin6"
+        android:orientation="vertical">
+
+        <TextView
+            style="@style/text_white15"
+            android:id="@+id/tv_vouvherName"
+            android:text="活动代金券"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+        <TextView
+            style="@style/text_white12"
+            android:text="有效期:201.51.423.41.4214.124"
+            android:layout_marginTop="@dimen/top_margin12"
+            android:id="@+id/tv_vouvherTime"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+    </LinearLayout>
+
+    <TextView
+        android:layout_weight="2"
+        android:layout_centerVertical="true"
+        android:layout_alignParentRight="true"
+        style="@style/text_white13"
+        android:id="@+id/tv_use_status"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="未使用"/>
+</LinearLayout>
